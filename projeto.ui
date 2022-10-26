@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>918</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btn_contato">
+         <property name="text">
+          <string>HOME</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_outro">
+         <property name="text">
+          <string>TABLES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_home">
+         <property name="text">
+          <string>SOBRE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_tables">
+         <property name="text">
+          <string>CONTATO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_sobre">
+         <property name="text">
+          <string>OUTRO</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="Pages">
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255,255,255)</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="pg_home">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">background:rgb(255, 170, 0)</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:72pt; font-weight:600; color:#ffffff;&quot;&gt;SENAC&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:600; color:#0000ff;&quot;&gt;SITEMA DE GERENCIAMENTO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pg_table">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QTabWidget" name="Home">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tables">
+           <attribute name="title">
+            <string>TreeWidget</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLineEdit" name="txt_file"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_abrir">
+                <property name="text">
+                 <string>Abrir</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="label_3">
+                    <property name="text">
+                     <string>ESTOQUE</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QTreeWidget" name="tw_estoque">
+                    <column>
+                     <property name="text">
+                      <string>Nfe</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Serie</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Cliente</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>UF</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Municipio</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>cod Iten</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Descrição</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>UN</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>especie</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Valor NFE</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Data de importação</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Usuario</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </column>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <widget class="QLabel" name="label_2">
+                    <property name="text">
+                     <string>SAIDA</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QTreeWidget" name="tw_saida">
+                    <column>
+                     <property name="text">
+                      <string>NFE</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>SERIE</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>DATA DE IMPORTAÇÃO</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>DATA SAIDA</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>USUARIO</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </column>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QPushButton" name="btn_importar">
+                   <property name="text">
+                    <string>Importar</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_7">
+                   <property name="text">
+                    <string>Gerar saida </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_estorno">
+                   <property name="text">
+                    <string>Estorno</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Tab 2</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
